@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Milk Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Baby Milk Tracker</h1>
+        <form id="milk-form">
+            <label for="time">Time (HH:MM):</label>
+            <input type="text" id="time" placeholder="e.g., 14:30" required>
+            <label for="amount">Milk Amount (ml):</label>
+            <input type="number" id="amount" placeholder="e.g., 150" required>
+            <button type="submit">Add Record</button>
+        </form>
+        <canvas id="milk-chart"></canvas>
+    </div>
+    <script src="Chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
